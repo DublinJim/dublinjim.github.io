@@ -32,7 +32,7 @@
                 <h2>History</h2>
                 <p>Irish dancing is a traditional form of dance that originated in Ireland. It is known for its rapid leg and foot movements, while the body and arms remain mostly stationary. The dance has roots in ancient Celtic traditions and has evolved over centuries, gaining worldwide popularity through shows like <em>Riverdance</em>.</p>
             </section>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Irish_dancers_2014.jpg" alt="Irish dancers performing">
+          
             <section id="styles" contenteditable="true" spellcheck="true">
                 <h2>Styles of Irish Dance</h2>
                 <ul>
@@ -54,23 +54,7 @@
     <footer>
         © 2025 Irish Dancing Enthusiasts
     </footer>
-    <script>
-    // Save button functionality: download the edited content as HTML
-    document.getElementById('saveBtn').onclick = function() {
-        const content = document.getElementById('editable-content').innerHTML;
-        const html = `<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n` +
-            document.head.innerHTML +
-            `\n</head>\n<body>\n` +
-            document.body.innerHTML.replace(document.getElementById('editable-content').outerHTML, `<div id=\"editable-content\">${content}</div>`) +
-            `\n</body>\n</html>`;
-        const blob = new Blob([html], {type: 'text/html'});
-        const a = document.createElement('a');
-        a.href = URL.createObjectURL(blob);
-        a.download = 'index.html';
-        a.click();
-        URL.revokeObjectURL(a.href);
-    };
-    </script>
+    <script src="script.js"></script>
 
 
 <iframe id="nr-ext-rsicon" style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent;"></iframe>
