@@ -1,3 +1,47 @@
+/* Sidebar styles */
+.sidebar {
+    float: left;
+    width: 200px;
+    margin: 2rem 2rem 2rem 0;
+    background: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1rem;
+}
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sidebar-link {
+    margin-bottom: 1rem;
+}
+.sidebar-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        float: none;
+        width: 100%;
+        margin: 1rem 0;
+        box-shadow: none;
+    }
+    .sidebar-nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .sidebar-link {
+        margin: 0 0.5rem 0 0;
+    }
+    .sidebar-img {
+        width: 80px;
+        margin: 0 0.5rem 0 0;
+    }
+}
 /* Responsive header image for mobile devices */
 .responsive-header-img {
     max-width: 100%;
